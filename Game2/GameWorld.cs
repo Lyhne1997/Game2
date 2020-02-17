@@ -51,6 +51,7 @@ namespace Game2
 
             // TODO: use this.Content to load your game content here
             gameObjects.Add(new Player());
+            gameObjects.Add(new Drone());
 
             foreach (GameObject gameObject in gameObjects)
             {

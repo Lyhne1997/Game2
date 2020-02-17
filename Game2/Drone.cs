@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Game2
 {
-    class Player : GameObject
+    class Drone : GameObject
     {
         public override void LoadContent(ContentManager content)
         {
-            //sprite = content.Load<Texture2D>("playerguy");
+            sprite = content.Load<Texture2D>("playerguy");
         }
     }
 }
