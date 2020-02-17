@@ -50,8 +50,8 @@ namespace Game2
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            gameObjects.Add(new Player());
-            gameObjects.Add(new Drone());
+            //gameObjects.Add(new Player());
+            gameObjects.Add(new Drone(new Vector2(0,0)));
 
             foreach (GameObject gameObject in gameObjects)
             {

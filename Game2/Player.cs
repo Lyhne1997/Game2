@@ -17,5 +17,9 @@ namespace Game2
         {
             //sprite = content.Load<Texture2D>("playerguy");
         }
+        public override void Update(GameTime gameTime)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
