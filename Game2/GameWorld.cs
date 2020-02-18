@@ -52,6 +52,7 @@ namespace Game2
             // TODO: use this.Content to load your game content here
             //gameObjects.Add(new Player());
             gameObjects.Add(new Drone(new Vector2(0,0)));
+            gameObjects.Add(new FlowerA(new Vector2(650,350)));
 
             foreach (GameObject gameObject in gameObjects)
             {
@@ -79,6 +80,10 @@ namespace Game2
                 Exit();
 
             // TODO: Add your update logic here
+            foreach (GameObject gameObject in gameObjects)
+            {
+                gameObject.Update(gameTime);
+            }
 
             base.Update(gameTime);
         }

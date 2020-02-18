@@ -21,7 +21,7 @@ namespace Game2
 
         protected Vector2 origin;
 
-        private float timeElapsed;
+        public float timeElapsed;
 
         private int currentIndex;
 
@@ -38,5 +38,20 @@ namespace Game2
         public abstract void LoadContent(ContentManager content);
 
         public abstract void Update(GameTime gameTime);
+
+        public virtual Rectangle CollisionBox
+        {
+            get
+            {
+                return new Rectangle((int)position.X, (int)position.Y, sprite.Width / 2, sprite.Height);
+            }
+        }
+        public virtual Rectangle Rectangle
+        {
+            get
+            {
+                return new Rectangle((int)position.X, (int)position.Y, sprite.Width, sprite.Height - 10);
+            }
+        }
     }
 }
